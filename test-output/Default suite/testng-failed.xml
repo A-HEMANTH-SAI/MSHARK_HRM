@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.admin.LoginAsHOA">
+      <class name="com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test">
         <methods>
           <include name="config_AC"/>
           <include name="config_AS"/>
+          <include name="tc_09_test"/>
           <include name="config_BC"/>
           <include name="config_BS"/>
-          <include name="loginAndCheckAccess" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- com.admin.LoginAsHOA -->
+      </class> <!-- com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
