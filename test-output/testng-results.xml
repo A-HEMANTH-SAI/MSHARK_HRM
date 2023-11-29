@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-27T16:59:42 IST" name="Default suite" finished-at="2023-11-27T16:59:55 IST" duration-ms="13484">
+    <groups>
+    </groups>
+    <test started-at="2023-11-27T16:59:42 IST" name="Default test" finished-at="2023-11-27T16:59:55 IST" duration-ms="13484">
+      <class name="com.admin.LoginAsHOA">
+        <test-method is-config="true" signature="config_BS()[pri:0, instance:com.admin.LoginAsHOA@60099951]" started-at="2023-11-27T16:59:42 IST" name="config_BS" finished-at="2023-11-27T16:59:42 IST" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_BS -->
+        <test-method is-config="true" signature="config_BC()[pri:0, instance:com.admin.LoginAsHOA@60099951]" started-at="2023-11-27T16:59:42 IST" name="config_BC" finished-at="2023-11-27T16:59:44 IST" duration-ms="2618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_BC -->
+        <test-method signature="loginAndCheckAccess(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.admin.LoginAsHOA@60099951]" started-at="2023-11-27T16:59:44 IST" name="loginAndCheckAccess" data-provider="storeData" finished-at="2023-11-27T16:59:50 IST" duration-ms="5663" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hrhead@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hrhead@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[HR Head]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndCheckAccess -->
+        <test-method signature="loginAndCheckAccess(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.admin.LoginAsHOA@60099951]" started-at="2023-11-27T16:59:50 IST" name="loginAndCheckAccess" data-provider="storeData" finished-at="2023-11-27T16:59:53 IST" duration-ms="2702" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hrofficer@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hrofficer@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[HR Officer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndCheckAccess -->
+        <test-method signature="loginAndCheckAccess(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.admin.LoginAsHOA@60099951]" started-at="2023-11-27T16:59:53 IST" name="loginAndCheckAccess" data-provider="storeData" finished-at="2023-11-27T16:59:55 IST" duration-ms="2160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hrassistant@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hrassistant@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[HR Assistant]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndCheckAccess -->
+        <test-method is-config="true" signature="config_AC()[pri:0, instance:com.admin.LoginAsHOA@60099951]" started-at="2023-11-27T16:59:55 IST" name="config_AC" finished-at="2023-11-27T16:59:55 IST" duration-ms="254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AC -->
+        <test-method is-config="true" signature="config_AS()[pri:0, instance:com.admin.LoginAsHOA@60099951]" started-at="2023-11-27T16:59:55 IST" name="config_AS" finished-at="2023-11-27T16:59:55 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AS -->
+      </class> <!-- com.admin.LoginAsHOA -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
