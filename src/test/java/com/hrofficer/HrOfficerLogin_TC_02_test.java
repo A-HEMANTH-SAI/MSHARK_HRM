@@ -1,6 +1,8 @@
 package com.hrofficer;
 
 import java.io.IOException;
+
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 import com.hrm.genericutils.BaseClass;
 import com.hrm.objectRepo.HomePage;
@@ -36,6 +38,6 @@ public class HrOfficerLogin_TC_02_test extends BaseClass {
 		// Verify the Alert message using Assert and Accept the Alert
 		expectedPopupMessage = euObj.readExcelData("TC_02", 3, 9);
 		wuObj.acceptAlertWithAssert(driver, 10, expectedPopupMessage);
-		
+		Reporter.log("****TC02 Executed Completely****",true);
 	}
 }

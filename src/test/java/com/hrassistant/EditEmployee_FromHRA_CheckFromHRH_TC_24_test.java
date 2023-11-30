@@ -2,6 +2,7 @@ package com.hrassistant;
 
 import java.io.IOException;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 import com.hrm.genericutils.BaseClass;
 import com.hrm.objectRepo.EditEmployeePage;
@@ -69,5 +70,6 @@ public class EditEmployee_FromHRA_CheckFromHRH_TC_24_test extends BaseClass {
 		// Verify the Alert message using Assert and Accept the Alert
 		expectedPopupMessage = euObj.readExcelData("TC_24", 3, 10);
 		wuObj.acceptAlertWithAssert(driver, 10, expectedPopupMessage);
+		Reporter.log("****TC24 Executed Completely****",true);
 	}
 }

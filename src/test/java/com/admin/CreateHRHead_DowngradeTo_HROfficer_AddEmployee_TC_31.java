@@ -3,6 +3,7 @@ package com.admin;
 import java.io.IOException;
 
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -149,5 +150,6 @@ public class CreateHRHead_DowngradeTo_HROfficer_AddEmployee_TC_31 extends BaseCl
 		Assert.assertEquals(actualContactNo, expectedContactNo, "FAIL : Contact number of Employee is not updated and is verified.");
 		// Close the Edit Employee Page
 		eep.getCloseBtn().click();
+		Reporter.log("****TC31 Executed Completely****",true);
 	}
 }

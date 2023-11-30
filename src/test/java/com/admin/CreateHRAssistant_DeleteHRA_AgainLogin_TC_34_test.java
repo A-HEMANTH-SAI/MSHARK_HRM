@@ -1,6 +1,8 @@
 package com.admin;
 
 import java.io.IOException;
+
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 import com.hrm.genericutils.BaseClass;
 import com.hrm.objectRepo.AddAdminPage;
@@ -105,5 +107,6 @@ public class CreateHRAssistant_DeleteHRA_AgainLogin_TC_34_test extends BaseClass
 		// Verify the Alert message and Accept the Alert
 		expectedPopupMessage = euObj.readExcelData("TC_34", 4, 7);
 		wuObj.acceptAlertWithAssert(driver, 10, expectedPopupMessage);
+		Reporter.log("****TC34 Executed Completely****",true);
 	}
 }

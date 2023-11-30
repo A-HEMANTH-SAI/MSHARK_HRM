@@ -2,6 +2,7 @@ package com.admin;
 
 import java.io.IOException;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 import com.hrm.genericutils.BaseClass;
 import com.hrm.genericutils.DataProviderClass;
@@ -35,6 +36,7 @@ public class LoginAs_Head_Officer_Assistant extends BaseClass{
 		}
 		hp.logOutFormApplication();
 		wuObj.acceptAlert(driver, 10);
+		Reporter.log("****TC_HOA Executed Completely****",true);
 	}
 
 }

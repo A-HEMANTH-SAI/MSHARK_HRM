@@ -3,6 +3,7 @@ package com.admin;
 import java.io.IOException;
 
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.hrm.genericutils.BaseClass;
@@ -86,5 +87,6 @@ public class AddEmployeeHRH_Check_Employee_FromHRO_TC_54_test extends BaseClass 
 		ep.getSearchTextfield().sendKeys(expEmployeeId);
 		String actEmployeeId = ep.getEmployeeIdValue();
 		Assert.assertEquals(actEmployeeId, expEmployeeId, "FAILED : Employee added by HR Head is not displayed in HR Officer Employee list.");
+		Reporter.log("****TC54 Executed Completely****",true);
 	}
 }

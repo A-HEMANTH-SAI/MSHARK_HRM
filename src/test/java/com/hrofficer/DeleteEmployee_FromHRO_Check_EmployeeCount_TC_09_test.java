@@ -3,6 +3,7 @@ package com.hrofficer;
 import java.io.IOException;
 import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 import com.hrm.genericutils.BaseClass;
 import com.hrm.objectRepo.DeleteEmployeePage;
@@ -58,5 +59,6 @@ public class DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test extends BaseC
 		// Verify the Alert message using Assert and Accept the Alert
 		expectedPopupMessage = euObj.readExcelData("TC_09", 3, 7);
 		wuObj.acceptAlertWithAssert(driver, 10, expectedPopupMessage);
+		Reporter.log("****TC09 Executed Completely****",true);
 	}
 }

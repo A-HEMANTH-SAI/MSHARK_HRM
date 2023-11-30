@@ -3,6 +3,7 @@ package com.admin;
 import java.io.IOException;
 
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.hrm.genericutils.BaseClass;
@@ -139,5 +140,6 @@ public class AddEmployee_TC_01_test extends BaseClass {
 		ep.getSearchTextfield().sendKeys(expEmployeeId);
 		String actEmployeeId = ep.getEmployeeIdValue();
 		Assert.assertEquals(actEmployeeId, expEmployeeId, "FAILED : HR Officer couldn't add the Employee.");
+		Reporter.log("****TC1 Executed Completely****",true);
 	}
 }
