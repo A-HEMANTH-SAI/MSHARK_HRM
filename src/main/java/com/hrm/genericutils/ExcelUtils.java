@@ -127,4 +127,18 @@ public class ExcelUtils {
 		}
 		return data;
 	}
+	
+	public HashMap<String,String> readMultipleExcelData(String sheetName) throws EncryptedDocumentException, IOException{
+		FileInputStream fis=new FileInputStream(IPathConstants.excelFilePath);
+		Workbook wb=WorkbookFactory.create(fis);
+		Sheet sh=wb.getSheet(sheetName);
+		int rowCount=sh.getLastRowNum();
+		HashMap<String,String> hm=new HashMap<String,String>();
+		for(int r=0;r<=rowCount;r++) {
+			Row ro=sh.getRow(r);
+			hm.put(ro.getCell(0).getStringCellValue(), ro.getCell(1).getStringCellValue());
+		}
+		return hm;
+		
+	}
 }
