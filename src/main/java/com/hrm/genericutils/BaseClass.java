@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
@@ -26,6 +27,7 @@ public class BaseClass {
 	public void config_BS() throws SQLException {
 		// Connect to the Database
 		dbObj.connectToDatabase();
+		Reporter.log("****Connected to DB****",true);
 	}
 	@BeforeClass(alwaysRun = true)
 	public void config_BC() throws IOException {
@@ -58,5 +60,6 @@ public class BaseClass {
 	public void config_AS() throws SQLException {
 		// Disconnect from Testing Environment Database
 		dbObj.closeDatabaseConnection();
+		Reporter.log("****Disconnected from DB****",true);
 	}
 }
