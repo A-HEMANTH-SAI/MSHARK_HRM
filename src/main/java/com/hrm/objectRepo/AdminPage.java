@@ -111,6 +111,7 @@ public class AdminPage {
 	public void clickOnDeleteAdminIcon(WebDriver driver, String adminFirstName, String hrId) {
 		WebElement plusExpandIcon = driver.findElement(By.xpath("//td[text()='" + adminFirstName + "']/..//td[@class='sorting_1' and text()='" + hrId + "']"));
 		plusExpandIcon.click();
-		deleteAdminIcon.click();
+		driver.findElement(By.xpath("//td[.='"+hrId+"']/following-sibling::td[.='"+adminFirstName+"']/following-sibling::td[7]/i[@title='Delete Employee']")).click();
+		//deleteAdminIcon.click();
 	}
 }

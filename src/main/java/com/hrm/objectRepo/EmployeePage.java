@@ -116,7 +116,7 @@ public class EmployeePage {
 	 * @param companyId
 	 */
 	public void clickOnEditEmployeeIcon(WebDriver driver, String employeeFirstName, String companyId) {
-		WebElement editEmployeeIcon = driver.findElement(By.xpath("//td[text()='" + employeeFirstName + "']/..//td[@class='sorting_1' and text()='" + companyId + "']/..//td//i[@title='Edit Employee']"));
+		WebElement editEmployeeIcon = driver.findElement(By.xpath("//td[.='"+companyId+"']/following-sibling::td[.='"+employeeFirstName+"']/following-sibling::td[6]/child::i[@title='Edit Employee']"));
 		editEmployeeIcon.click();
 	}
 
@@ -128,7 +128,7 @@ public class EmployeePage {
 	 * @param companyId
 	 */
 	public void clickOnDeleteEmployeeIcon(WebDriver driver, String employeeFirstName, String companyId) {
-		WebElement deleteEmpliyeeIcon = driver.findElement(By.xpath("//td[text()='" + employeeFirstName	+ "']/..//td[@class='sorting_1' and text()='" + companyId + "']/..//td//i[@title='Delete Employee']"));
+		WebElement deleteEmpliyeeIcon = driver.findElement(By.xpath("//td[.='"+companyId+"']/following-sibling::td[.='"+employeeFirstName+"']/following-sibling::td[6]/child::i[@title='Delete Employee']"));
 		deleteEmpliyeeIcon.click();
 	}
 

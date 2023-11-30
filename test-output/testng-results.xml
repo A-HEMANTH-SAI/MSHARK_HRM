@@ -1,33 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[****Connected to DB****]]>
+    </line>
+    <line>
+      <![CDATA[****Disconnected from DB****]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-11-29T15:15:40 IST" name="Default suite" finished-at="2023-11-29T15:18:28 IST" duration-ms="167791">
+  <suite started-at="2023-11-30T15:59:08 IST" name="Default suite" finished-at="2023-11-30T16:00:38 IST" duration-ms="90314">
     <groups>
       <group name="integration">
         <method signature="DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test.tc_09_test()[pri:0, instance:com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test@1a942c18]" name="tc_09_test" class="com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test"/>
       </group> <!-- integration -->
     </groups>
-    <test started-at="2023-11-29T15:15:40 IST" name="Default test" finished-at="2023-11-29T15:18:28 IST" duration-ms="167791">
+    <test started-at="2023-11-30T15:59:08 IST" name="Default test" finished-at="2023-11-30T16:00:38 IST" duration-ms="90314">
       <class name="com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test">
-        <test-method is-config="true" signature="config_BS()[pri:0, instance:com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test@1a942c18]" started-at="2023-11-29T15:15:40 IST" name="config_BS" finished-at="2023-11-29T15:15:40 IST" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="config_BS()[pri:0, instance:com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test@1a942c18]" started-at="2023-11-30T15:59:07 IST" name="config_BS" finished-at="2023-11-30T15:59:08 IST" duration-ms="316" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[****Connected to DB****]]>
+            </line>
           </reporter-output>
         </test-method> <!-- config_BS -->
-        <test-method is-config="true" signature="config_BC()[pri:0, instance:com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test@1a942c18]" started-at="2023-11-29T15:15:40 IST" name="config_BC" finished-at="2023-11-29T15:15:43 IST" duration-ms="2423" status="PASS">
+        <test-method is-config="true" signature="config_BC()[pri:0, instance:com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test@1a942c18]" started-at="2023-11-30T15:59:08 IST" name="config_BC" finished-at="2023-11-30T15:59:10 IST" duration-ms="1870" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- config_BC -->
-        <test-method signature="tc_09_test()[pri:0, instance:com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test@1a942c18]" started-at="2023-11-29T15:15:43 IST" name="tc_09_test" finished-at="2023-11-29T15:18:28 IST" duration-ms="165044" status="PASS">
+        <test-method signature="tc_09_test()[pri:0, instance:com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test@1a942c18]" started-at="2023-11-30T15:59:10 IST" name="tc_09_test" finished-at="2023-11-30T16:00:38 IST" duration-ms="88121" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <i data-toggle="modal" data-target="#modal-delete3552" class="fa fa-trash" style="color: red" title="Delete Employee"></i> is not clickable at point (1443, 357). Other element would receive the click: <div class="modal fade show" id="modal-overlay" aria-modal="true" style="padding-right: 17px; display: block;">...</div>
+  (Session info: chrome=119.0.6045.200)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [945998cef055eb864256a87dc7099f59, clickElement {id=CF5776B40EFC8780C24B9AF821ACD97E_element_8983}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59803}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59803/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (945998cef055eb864256a87dc7099f59)] -> xpath: //td[text()='Rohith']/..//td[@class='sorting_1' and text()='333333']/..//td//i[@title='Delete Employee']]
+Session ID: 945998cef055eb864256a87dc7099f59]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i data-toggle="modal" data-target="#modal-delete3552" class="fa fa-trash" style="color: red" title="Delete Employee"></i> is not clickable at point (1443, 357). Other element would receive the click: <div class="modal fade show" id="modal-overlay" aria-modal="true" style="padding-right: 17px; display: block;">...</div>
+  (Session info: chrome=119.0.6045.200)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [945998cef055eb864256a87dc7099f59, clickElement {id=CF5776B40EFC8780C24B9AF821ACD97E_element_8983}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59803}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59803/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (945998cef055eb864256a87dc7099f59)] -> xpath: //td[text()='Rohith']/..//td[@class='sorting_1' and text()='333333']/..//td//i[@title='Delete Employee']]
+Session ID: 945998cef055eb864256a87dc7099f59
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at com.hrm.objectRepo.EmployeePage.clickOnDeleteEmployeeIcon(EmployeePage.java:132)
+at com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test.tc_09_test(DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_09_test -->
-        <test-method is-config="true" signature="config_AC()[pri:0, instance:com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test@1a942c18]" started-at="2023-11-29T15:18:28 IST" name="config_AC" finished-at="2023-11-29T15:18:28 IST" duration-ms="238" status="PASS">
+        <test-method is-config="true" signature="config_AC()[pri:0, instance:com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test@1a942c18]" started-at="2023-11-30T16:00:38 IST" name="config_AC" finished-at="2023-11-30T16:00:38 IST" duration-ms="264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- config_AC -->
-        <test-method is-config="true" signature="config_AS()[pri:0, instance:com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test@1a942c18]" started-at="2023-11-29T15:18:28 IST" name="config_AS" finished-at="2023-11-29T15:18:28 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="config_AS()[pri:0, instance:com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test@1a942c18]" started-at="2023-11-30T16:00:38 IST" name="config_AS" finished-at="2023-11-30T16:00:38 IST" duration-ms="7" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[****Disconnected from DB****]]>
+            </line>
           </reporter-output>
         </test-method> <!-- config_AS -->
       </class> <!-- com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test -->
