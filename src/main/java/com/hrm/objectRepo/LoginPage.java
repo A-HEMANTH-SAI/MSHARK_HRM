@@ -2,6 +2,7 @@ package com.hrm.objectRepo;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -13,7 +14,7 @@ public class LoginPage extends WebDriverUtils {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(name = "hr_email")
+	@FindAll({@FindBy(xpath="//input[@name='hr_email']"),@FindBy(xpath="//input[@placeholder='HR Email']")})
 	WebElement hrEmailTextfield;
 
 	public WebElement getHrEmailTextfield() {
@@ -53,20 +54,20 @@ public class LoginPage extends WebDriverUtils {
 	public void hrOfficerLogin(String username, String password) {
 		hrEmailTextfield.sendKeys(username);
 		hrPasswordTextfield.sendKeys(password);
-		wdu.selectDropdownByText(hrTypeDropdown,"→ HR Officer");
+		wdu.selectDropdownByValue(hrTypeDropdown,"HR Officer");
 		signInButton.click();
 	}
 	public void hrAssistantLogin(String username, String password) {
 		hrEmailTextfield.sendKeys(username);
 		hrPasswordTextfield.sendKeys(password);
-		wdu.selectDropdownByText(hrTypeDropdown,"→ HR Assistant");
+		wdu.selectDropdownByValue(hrTypeDropdown,"HR Assistant");
 		signInButton.click();
 	}
 	
 	public void hrHeadLogin(String username, String password) {
 		hrEmailTextfield.sendKeys(username);
 		hrPasswordTextfield.sendKeys(password);
-		wdu.selectDropdownByText(hrTypeDropdown,"→ HR Head");
+		wdu.selectDropdownByValue(hrTypeDropdown,"HR Head");
 		signInButton.click();
 	}
 	
