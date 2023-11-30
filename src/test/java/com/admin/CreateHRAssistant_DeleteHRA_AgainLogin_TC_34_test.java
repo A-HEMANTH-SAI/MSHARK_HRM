@@ -2,6 +2,7 @@ package com.admin;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 import com.hrm.genericutils.BaseClass;
@@ -91,6 +92,10 @@ public class CreateHRAssistant_DeleteHRA_AgainLogin_TC_34_test extends BaseClass
 		String assistantAdminFirstName = euObj.readExcelData("TC_34", 3, 1);
 		ap.getSearchTextfield().sendKeys(assistantAdminFirstName);
 		String assistantAdminCompanyId = euObj.readExcelData("TC_34", 2, 1);
+		
+		
+		wuObj.waitUntilElementGetsClickable(driver, driver.findElement(By.xpath("//td[.='"+assistantAdminCompanyId+"']/following-sibling::td[.='"+assistantAdminFirstName+"']/following-sibling::td[7]/i[@title='Delete Employee']")), 20);
+		
 		ap.clickOnDeleteAdminIcon(driver, assistantAdminFirstName, assistantAdminCompanyId);
 		DeleteAdminPage dap = new DeleteAdminPage(driver);
 		dap.getDeleteButton().click();

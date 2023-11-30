@@ -1,6 +1,8 @@
 package com.hrassistant;
 
 import java.io.IOException;
+
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
@@ -36,6 +38,11 @@ public class EditEmployee_FromHRA_CheckFromHRH_TC_24_test extends BaseClass {
 		String employeeFirstName = euObj.readExcelData("TC_24", 3, 4);
 		String employeeId = euObj.readExcelData("TC_24", 2, 4);
 		ep.getSearchTextfield().sendKeys(employeeId);
+		
+		
+		wuObj.waitUntilElementGetsClickable(driver, driver.findElement(By.xpath("//td[.='"+employeeId+"']/following-sibling::td[.='"+employeeFirstName+"']/following-sibling::td[6]/child::i[@title='Edit Employee']")), 20);
+		
+		
 		ep.clickOnEditEmployeeIcon(driver, employeeFirstName, employeeId);
 		String employeeNameToModify = euObj.readExcelData("TC_24", 2, 7);
 		EditEmployeePage eep = new EditEmployeePage(driver);

@@ -2,6 +2,7 @@ package com.admin;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Listeners;
@@ -131,6 +132,11 @@ public class CreateHRHead_DowngradeTo_HROfficer_AddEmployee_TC_31 extends BaseCl
 		String employeeId = euObj.readExcelData("TC_31", 2, 7);
 		ep.getSearchTextfield().sendKeys(employeeId);
 		String employeeFirstName = euObj.readExcelData("TC_31", 3, 7);
+		
+		
+		wuObj.waitUntilElementGetsClickable(driver, driver.findElement(By.xpath("//td[.='"+employeeId+"']/following-sibling::td[.='"+employeeFirstName+"']/following-sibling::td[6]/child::i[@title='Edit Employee']")), 20);
+		
+		
 		// Edit the searched Employee contact number
 		ep.clickOnEditEmployeeIcon(driver, employeeFirstName, employeeId);
 		EditEmployeePage eep = new EditEmployeePage(driver);

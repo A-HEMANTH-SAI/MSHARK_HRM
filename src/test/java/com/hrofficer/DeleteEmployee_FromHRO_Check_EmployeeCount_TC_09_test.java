@@ -1,10 +1,13 @@
 package com.hrofficer;
 
 import java.io.IOException;
+
 import org.apache.poi.EncryptedDocumentException;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
+
 import com.hrm.genericutils.BaseClass;
 import com.hrm.objectRepo.DeleteEmployeePage;
 import com.hrm.objectRepo.EmployeePage;
@@ -14,7 +17,7 @@ import com.hrm.objectRepo.LoginPage;
 // Integration [ Delete Employee by HR Officier and check the HR Officier dashboard Employee count ] --> TestScript dependent on TC_01 and TC_54
 public class DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test extends BaseClass{
 	@Test (groups = "integration")
-	public void tc_09_test() throws EncryptedDocumentException, IOException {
+	public void tc_09_test() throws EncryptedDocumentException, IOException, InterruptedException {
 
 		// Retrieve common data from Properties file
 		String url = puObj.readDataFromPropertiesFile("url");
@@ -42,6 +45,13 @@ public class DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test extends BaseC
 		String employeeId = euObj.readExcelData("TC_09", 2, 4);
 		String employeeName = euObj.readExcelData("TC_09", 3, 4);
 		ep.getSearchTextfield().sendKeys(employeeId);
+		
+		
+		wuObj.waitUntilElementGetsClickable(driver,driver.findElement(By.xpath("//td[.='"+employeeId+"']/following-sibling::td[.='"+employeeName+"']/following-sibling::td[6]/child::i[@title='Delete Employee']") ), 20);
+		
+		
+		
+		
 		ep.clickOnDeleteEmployeeIcon(driver, employeeName, employeeId);
 		DeleteEmployeePage dep = new DeleteEmployeePage(driver);
 		dep.getDeleteButton().click();
