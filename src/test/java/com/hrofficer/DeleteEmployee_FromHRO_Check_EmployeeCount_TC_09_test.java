@@ -50,7 +50,7 @@ public class DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test extends BaseC
 		Thread.sleep(4000);
 		
 		WebElement we=driver.findElement(By.xpath("//td[.='"+employeeId+"']/following-sibling::td[.='"+employeeName+"']/following-sibling::td[6]/child::i[@title='Delete Employee']"));
-		Reporter.log(""+we+"",true);
+		Reporter.log(""+we+" this is reporter log****",true);
 		
 		
 		ep.clickOnDeleteEmployeeIcon(driver, employeeName, employeeId);
