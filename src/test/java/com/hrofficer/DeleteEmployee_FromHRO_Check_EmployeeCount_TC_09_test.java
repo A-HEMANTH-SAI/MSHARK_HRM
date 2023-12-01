@@ -48,8 +48,8 @@ public class DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test extends BaseC
 		ep.getSearchTextfield().sendKeys(employeeId);
 	
 		
-Thread.sleep(10);		
-		
+		wuObj.waitUntilElementGetsVisible(driver, driver.findElement(By.xpath("//td[.='"+employeeId+"']/following-sibling::td[.='"+employeeName+"']/following-sibling::td[6]/child::i[@title='Delete Employee']")), 50);
+		Reporter.log("Delete Employee Icon is visible",true);
 		
 		
 		ep.clickOnDeleteEmployeeIcon(driver, employeeName, employeeId);
