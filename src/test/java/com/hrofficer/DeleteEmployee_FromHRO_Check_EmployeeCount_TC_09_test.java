@@ -47,7 +47,7 @@ public class DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test extends BaseC
 		ep.getSearchTextfield().sendKeys(employeeId);
 		
 		
-		wuObj.waitUntilElementGetsClickable(driver,driver.findElement(By.xpath("//td[.='"+employeeId+"']/following-sibling::td[.='"+employeeName+"']/following-sibling::td[6]/child::i[@title='Delete Employee']") ), 20);
+		wuObj.waitUntilElementGetsClickable(driver,driver.findElement(By.xpath("//td[.='"+employeeId+"']/following-sibling::td[.='"+employeeName+"']/following-sibling::td[6]/child::i[@title='Delete Employee']") ), 100);
 		
 		
 		

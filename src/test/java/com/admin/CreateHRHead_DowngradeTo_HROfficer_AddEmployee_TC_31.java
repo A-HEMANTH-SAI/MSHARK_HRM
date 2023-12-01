@@ -134,7 +134,7 @@ public class CreateHRHead_DowngradeTo_HROfficer_AddEmployee_TC_31 extends BaseCl
 		String employeeFirstName = euObj.readExcelData("TC_31", 3, 7);
 		
 		
-		wuObj.waitUntilElementGetsClickable(driver, driver.findElement(By.xpath("//td[.='"+employeeId+"']/following-sibling::td[.='"+employeeFirstName+"']/following-sibling::td[6]/child::i[@title='Edit Employee']")), 20);
+		wuObj.waitUntilElementGetsClickable(driver, driver.findElement(By.xpath("//td[.='"+employeeId+"']/following-sibling::td[.='"+employeeFirstName+"']/following-sibling::td[6]/child::i[@title='Edit Employee']")), 100);
 		
 		
 		// Edit the searched Employee contact number

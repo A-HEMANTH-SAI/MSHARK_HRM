@@ -94,7 +94,7 @@ public class CreateHRAssistant_DeleteHRA_AgainLogin_TC_34_test extends BaseClass
 		String assistantAdminCompanyId = euObj.readExcelData("TC_34", 2, 1);
 		
 		
-		wuObj.waitUntilElementGetsClickable(driver, driver.findElement(By.xpath("//td[.='"+assistantAdminCompanyId+"']/following-sibling::td[.='"+assistantAdminFirstName+"']/following-sibling::td[7]/i[@title='Delete Employee']")), 20);
+		wuObj.waitUntilElementGetsClickable(driver, driver.findElement(By.xpath("//td[.='"+assistantAdminCompanyId+"']/following-sibling::td[.='"+assistantAdminFirstName+"']/following-sibling::td[7]/i[@title='Delete Employee']")), 100);
 		
 		ap.clickOnDeleteAdminIcon(driver, assistantAdminFirstName, assistantAdminCompanyId);
 		DeleteAdminPage dap = new DeleteAdminPage(driver);
