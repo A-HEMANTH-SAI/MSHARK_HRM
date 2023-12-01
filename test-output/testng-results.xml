@@ -8,48 +8,50 @@
       <![CDATA[****Disconnected from DB****]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-11-30T15:59:08 IST" name="Default suite" finished-at="2023-11-30T16:00:38 IST" duration-ms="90314">
+  <suite started-at="2023-12-01T12:05:30 IST" name="Default suite" finished-at="2023-12-01T12:07:03 IST" duration-ms="93088">
     <groups>
       <group name="integration">
         <method signature="DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test.tc_09_test()[pri:0, instance:com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test@1a942c18]" name="tc_09_test" class="com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test"/>
       </group> <!-- integration -->
     </groups>
-    <test started-at="2023-11-30T15:59:08 IST" name="Default test" finished-at="2023-11-30T16:00:38 IST" duration-ms="90314">
+    <test started-at="2023-12-01T12:05:30 IST" name="Default test" finished-at="2023-12-01T12:07:03 IST" duration-ms="93088">
       <class name="com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test">
-        <test-method is-config="true" signature="config_BS()[pri:0, instance:com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test@1a942c18]" started-at="2023-11-30T15:59:07 IST" name="config_BS" finished-at="2023-11-30T15:59:08 IST" duration-ms="316" status="PASS">
+        <test-method is-config="true" signature="config_BS()[pri:0, instance:com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test@1a942c18]" started-at="2023-12-01T12:05:30 IST" name="config_BS" finished-at="2023-12-01T12:05:30 IST" duration-ms="217" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[****Connected to DB****]]>
             </line>
           </reporter-output>
         </test-method> <!-- config_BS -->
-        <test-method is-config="true" signature="config_BC()[pri:0, instance:com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test@1a942c18]" started-at="2023-11-30T15:59:08 IST" name="config_BC" finished-at="2023-11-30T15:59:10 IST" duration-ms="1870" status="PASS">
+        <test-method is-config="true" signature="config_BC()[pri:0, instance:com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test@1a942c18]" started-at="2023-12-01T12:05:30 IST" name="config_BC" finished-at="2023-12-01T12:05:32 IST" duration-ms="1935" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- config_BC -->
-        <test-method signature="tc_09_test()[pri:0, instance:com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test@1a942c18]" started-at="2023-11-30T15:59:10 IST" name="tc_09_test" finished-at="2023-11-30T16:00:38 IST" duration-ms="88121" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="tc_09_test()[pri:0, instance:com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test@1a942c18]" started-at="2023-12-01T12:05:32 IST" name="tc_09_test" finished-at="2023-12-01T12:07:03 IST" duration-ms="90889" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[element click intercepted: Element <i data-toggle="modal" data-target="#modal-delete3552" class="fa fa-trash" style="color: red" title="Delete Employee"></i> is not clickable at point (1443, 357). Other element would receive the click: <div class="modal fade show" id="modal-overlay" aria-modal="true" style="padding-right: 17px; display: block;">...</div>
+              <![CDATA[stale element reference: stale element not found
   (Session info: chrome=119.0.6045.200)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [945998cef055eb864256a87dc7099f59, clickElement {id=CF5776B40EFC8780C24B9AF821ACD97E_element_8983}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59803}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59803/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (945998cef055eb864256a87dc7099f59)] -> xpath: //td[text()='Rohith']/..//td[@class='sorting_1' and text()='333333']/..//td//i[@title='Delete Employee']]
-Session ID: 945998cef055eb864256a87dc7099f59]]>
+Command: [ac7f2b9ab5c9d47d7c4b54b38ffc1f97, isElementDisplayed {id=C63BA4C5E214EDA3B2844E91B0484754_element_9561}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50402}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50402/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac7f2b9ab5c9d47d7c4b54b38ffc1f97)] -> xpath: //td[.='333333']/following-sibling::td[.='Rohith']/following-sibling::td[6]/child::i[@title='Delete Employee']]
+Session ID: ac7f2b9ab5c9d47d7c4b54b38ffc1f97]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i data-toggle="modal" data-target="#modal-delete3552" class="fa fa-trash" style="color: red" title="Delete Employee"></i> is not clickable at point (1443, 357). Other element would receive the click: <div class="modal fade show" id="modal-overlay" aria-modal="true" style="padding-right: 17px; display: block;">...</div>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
   (Session info: chrome=119.0.6045.200)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [945998cef055eb864256a87dc7099f59, clickElement {id=CF5776B40EFC8780C24B9AF821ACD97E_element_8983}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59803}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59803/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (945998cef055eb864256a87dc7099f59)] -> xpath: //td[text()='Rohith']/..//td[@class='sorting_1' and text()='333333']/..//td//i[@title='Delete Employee']]
-Session ID: 945998cef055eb864256a87dc7099f59
+Command: [ac7f2b9ab5c9d47d7c4b54b38ffc1f97, isElementDisplayed {id=C63BA4C5E214EDA3B2844E91B0484754_element_9561}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50402}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50402/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac7f2b9ab5c9d47d7c4b54b38ffc1f97)] -> xpath: //td[.='333333']/following-sibling::td[.='Rohith']/following-sibling::td[6]/child::i[@title='Delete Employee']]
+Session ID: ac7f2b9ab5c9d47d7c4b54b38ffc1f97
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -63,9 +65,15 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(Driver
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at com.hrm.objectRepo.EmployeePage.clickOnDeleteEmployeeIcon(EmployeePage.java:132)
-at com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test.tc_09_test(DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test.java:45)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:283)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+at com.hrm.genericutils.WebDriverUtils.waitUntilElementGetsClickable(WebDriverUtils.java:107)
+at com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test.tc_09_test(DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test.java:56)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -96,15 +104,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_09_test -->
-        <test-method is-config="true" signature="config_AC()[pri:0, instance:com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test@1a942c18]" started-at="2023-11-30T16:00:38 IST" name="config_AC" finished-at="2023-11-30T16:00:38 IST" duration-ms="264" status="PASS">
+        <test-method is-config="true" signature="config_AC()[pri:0, instance:com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test@1a942c18]" started-at="2023-12-01T12:07:03 IST" name="config_AC" finished-at="2023-12-01T12:07:03 IST" duration-ms="208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- config_AC -->
-        <test-method is-config="true" signature="config_AS()[pri:0, instance:com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test@1a942c18]" started-at="2023-11-30T16:00:38 IST" name="config_AS" finished-at="2023-11-30T16:00:38 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="config_AS()[pri:0, instance:com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test@1a942c18]" started-at="2023-12-01T12:07:03 IST" name="config_AS" finished-at="2023-12-01T12:07:03 IST" duration-ms="8" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[****Disconnected from DB****]]>

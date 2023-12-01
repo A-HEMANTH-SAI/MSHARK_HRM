@@ -9,19 +9,20 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">90,314</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">93,088</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test</td><td><a href="#m0">tc_09_test</a></td><td rowspan="1">1701340150102</td><td rowspan="1">88121</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test</td><td><a href="#m0">tc_09_test</a></td><td rowspan="1">1701412532230</td><td rowspan="1">90889</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test#tc_09_test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i data-toggle=&quot;modal&quot; data-target=&quot;#modal-delete3552&quot; class=&quot;fa fa-trash&quot; style=&quot;color: red&quot; title=&quot;Delete Employee&quot;&gt;&lt;/i&gt; is not clickable at point (1443, 357). Other element would receive the click: &lt;div class=&quot;modal fade show&quot; id=&quot;modal-overlay&quot; aria-modal=&quot;true&quot; style=&quot;padding-right: 17px; display: block;&quot;&gt;...&lt;/div&gt;
+<h2>Default test</h2><h3 id="m0">com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test#tc_09_test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
   (Session info: chrome=119.0.6045.200)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [945998cef055eb864256a87dc7099f59, clickElement {id=CF5776B40EFC8780C24B9AF821ACD97E_element_8983}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59803}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59803/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (945998cef055eb864256a87dc7099f59)] -&gt; xpath: //td[text()=&apos;Rohith&apos;]/..//td[@class=&apos;sorting_1&apos; and text()=&apos;333333&apos;]/..//td//i[@title=&apos;Delete Employee&apos;]]
-Session ID: 945998cef055eb864256a87dc7099f59
+Command: [ac7f2b9ab5c9d47d7c4b54b38ffc1f97, isElementDisplayed {id=C63BA4C5E214EDA3B2844E91B0484754_element_9561}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50402}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50402/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac7f2b9ab5c9d47d7c4b54b38ffc1f97)] -&gt; xpath: //td[.=&apos;333333&apos;]/following-sibling::td[.=&apos;Rohith&apos;]/following-sibling::td[6]/child::i[@title=&apos;Delete Employee&apos;]]
+Session ID: ac7f2b9ab5c9d47d7c4b54b38ffc1f97
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -35,9 +36,15 @@ Session ID: 945998cef055eb864256a87dc7099f59
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at com.hrm.objectRepo.EmployeePage.clickOnDeleteEmployeeIcon(EmployeePage.java:132)
-	at com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test.tc_09_test(DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test.java:45)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:283)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.hrm.genericutils.WebDriverUtils.waitUntilElementGetsClickable(WebDriverUtils.java:107)
+	at com.hrofficer.DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test.tc_09_test(DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test.java:56)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
