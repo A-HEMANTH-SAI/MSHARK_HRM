@@ -44,6 +44,9 @@ public class DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test extends BaseC
 		EmployeePage ep = new EmployeePage(driver);
 		String employeeId = euObj.readExcelData("TC_09", 2, 4);
 		String employeeName = euObj.readExcelData("TC_09", 3, 4);
+		
+		wuObj.waitUntilElementGetsClickable(driver, ep.getSearchTextfield(), 50);
+		
 		ep.getSearchTextfield().sendKeys(employeeId);
 		
 		
