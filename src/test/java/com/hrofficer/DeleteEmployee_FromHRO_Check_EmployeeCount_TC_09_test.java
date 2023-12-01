@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
@@ -47,9 +47,10 @@ public class DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test extends BaseC
 		String employeeName = euObj.readExcelData("TC_09", 3, 4);
 		ep.getSearchTextfield().sendKeys(employeeId);
 	
+		Thread.sleep(4000);
 		
-		wuObj.waitUntilElementGetsVisible(driver, driver.findElement(By.xpath("//td[.='"+employeeId+"']/following-sibling::td[.='"+employeeName+"']/following-sibling::td[6]/child::i[@title='Delete Employee']")), 50);
-		Reporter.log("Delete Employee Icon is visible",true);
+		WebElement we=driver.findElement(By.xpath("//td[.='"+employeeId+"']/following-sibling::td[.='"+employeeName+"']/following-sibling::td[6]/child::i[@title='Delete Employee']"));
+		Reporter.log(""+we+"",true);
 		
 		
 		ep.clickOnDeleteEmployeeIcon(driver, employeeName, employeeId);
