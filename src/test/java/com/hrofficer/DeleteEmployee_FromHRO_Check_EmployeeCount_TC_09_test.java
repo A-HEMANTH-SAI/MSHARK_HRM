@@ -46,15 +46,9 @@ public class DeleteEmployee_FromHRO_Check_EmployeeCount_TC_09_test extends BaseC
 		String employeeId = euObj.readExcelData("TC_09", 2, 4);
 		String employeeName = euObj.readExcelData("TC_09", 3, 4);
 		ep.getSearchTextfield().sendKeys(employeeId);
+	
 		
-		
-		
-		
-		JavascriptExecutor je=(JavascriptExecutor)driver;
-		je.executeScript("window.scrollTo(document.body.scrollWidth,0)");
-		
-		wuObj.waitUntilElementGetsClickable(driver,driver.findElement(By.xpath("//td[.='"+employeeId+"']/following-sibling::td[.='"+employeeName+"']/following-sibling::td[6]/child::i[@title='Delete Employee']") ), 100);
-		
+Thread.sleep(10);		
 		
 		
 		
